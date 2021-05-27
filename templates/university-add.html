@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %} Новий університе {% endblock %}
+{% block content %}
+    <div class="container mt-5 mb-5">
+    <h1>Додавання університету</h1>
+    <form action="{% url 'university-add' %}" method="post">{% csrf_token %}
+        {% for f in form %}
+            <p><label class="form-label" for="{{ f.id_for_label }}">{{ f.label }}: </label>{{ f }}</p>
+            <div class="form-error">{{ f.errors }}</div>
+        {% endfor %}
+        <button type="submit" class="btn btn-success">Додати університет</button>
+    </form>
+</div>
+{% endblock %}

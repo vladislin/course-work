@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" >
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css' rel='stylesheet' />
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js'></script>
+    <link href="{% static "main/css/style.css" %}" rel="stylesheet">
+</head>
+
+<body>
+<!-- ======= Header ======= -->
+{% include 'blocks/header.html' %}
+
+
+{% block content %} {% endblock %}
+
+
+<!-- ======= Footer ======= -->
+{% include 'blocks/footer.html' %}
+
+
+</body>
+</html>

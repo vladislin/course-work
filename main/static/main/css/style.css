@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Abril Fatface", serif;
+    background: #e7d4b4;
+    color: #2c3343;
+    height: 100vh;
+    align-items: center;
+}
+
+#map {
+    width: 1000px;
+    height: 550px;
+    margin: 0 auto;
+}
+
+.mapboxgl-popup {
+  max-width: 400px;
+  font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+.title-lg {
+  font-size: 17.3333333333px;
+  line-height: 1;
+  margin-bottom: 0.1em;
+}
+@media (min-width: 992px) {
+  .title-lg {
+    font-size: 26px;
+  }
+}
+@media (min-width: 1200px) {
+  .title-lg {
+    font-size: 31.2px;
+  }
+}
+
+.title-xl {
+  font-size: 26.6666666667px;
+  line-height: 1;
+  margin-bottom: 0.1em;
+}
+@media (min-width: 992px) {
+  .title-xl {
+    font-size: 40px;
+  }
+}
+@media (min-width: 1200px) {
+  .title-xl {
+    font-size: 48px;
+  }
+}
+
+.title-xxl {
+  font-size: 48px;
+  line-height: 1;
+  margin-bottom: 0.1em;
+}
+@media (min-width: 992px) {
+  .title-xxl {
+    font-size: 72px;
+  }
+}
+@media (min-width: 1200px) {
+  .title-xxl {
+    font-size: 86.4px;
+  }
+}
